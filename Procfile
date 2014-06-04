@@ -1,2 +1,2 @@
-web: ./run.sh
+web: npm start
 

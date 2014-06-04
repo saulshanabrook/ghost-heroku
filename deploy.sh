@@ -14,8 +14,7 @@ echo_and_run heroku create $APP_NAME --addons heroku-postgresql:dev
 HEROKU_URL=$(heroku info -s | grep web_url | sed 's/.*=//g')
 HEROKU_DOMAIN=$(basename $HEROKU_URL)
 
-echo_and_run heroku plugins:install git://github.com/ddollar/heroku-config.git
-echo_and_run heroku config:push
+echo_and_run heroku config:set PGSSLMODE=require
 
 
 if [ "$CUSTOM_DOMAIN" != "" ]

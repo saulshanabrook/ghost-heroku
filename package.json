@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "description": "Run ghost on Heroku",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/saulshanabrook/ghost-heroku.git"
@@ -25,5 +22,9 @@
   "dependencies": {
     "ghost": "~0.4.2",
     "pg": "~3.3.0"
+  },
+  "scripts": {
+    "start": "node node_modules/ghost/index.js",
+    "postinstall": "cp config.js node_modules/ghost/config.js"
   }
 }
