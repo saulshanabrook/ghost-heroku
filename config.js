@@ -2,12 +2,8 @@
 // Setup your Ghost install for various environments
 // Documentation can be found at http://docs.ghost.org/usage/configuration/
 
-var path = require('path'),
-    config;
 
-
-
-config = {
+var config = {
     production: {
         url: process.env.web_url,
         mail: {},
@@ -18,7 +14,7 @@ config = {
         },
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
+            host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: process.env.PORT
         }
