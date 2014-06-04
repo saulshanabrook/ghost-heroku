@@ -1,15 +1,8 @@
 # Deploy
 
 ```
-heroku create --addons heroku-postgresql:dev
+$ ./deploy.sh
 
-# if you want to use your own domain (https://devcenter.heroku.com/articles/custom-domains#custom-subdomains)
-heroku domains:add www.<myblog>.com
-heroku config:set web_url=http://www.<myblog>.com/
-# Else set the url to the heroku app
-heroku config:set (heroku info -s | grep web_url)
-
-heroku pg:wait
 ```
 
 
