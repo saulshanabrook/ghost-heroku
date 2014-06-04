@@ -9,6 +9,13 @@ $ ./deploy.sh
 $ heroku config:set "web_url=new_domain"
 ```
 
+# Downsides of hosting on Heroku
+1. No image upload suport, because Heroku has an ephemeral filesystem.
+   Waiting on Ghost apps support for external filesystems TryGhost/Ghost#1474
+2. Maybe no themes support TryGhost/Ghost#1502
+3. Postgresql isn't officially supported
+
+
 # Smart things this does
 1. Retrieve Herokuy PG `DATABASE_URL` straight from the environment, without
    having to break it up, like other solutions suggest. [This requires](https://github.com/brianc/node-postgres/issues/575)
@@ -18,8 +25,3 @@ $ heroku config:set "web_url=new_domain"
    repo itself. This feels a lot cleaner to me. And then if you wan to update
    ghost, just change the version in package.json.
 
-# Bad things that might scare you away
-1. No image upload suport, because Heroku has an ephemeral filesystem.
-   Waiting on Ghost apps support for external filesystems TryGhost/Ghost#1474
-2. Maybe no themes support TryGhost/Ghost#1502
-3. Postgresql isn't officially supported
