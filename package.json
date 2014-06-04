@@ -1,0 +1,28 @@
+{
+  "name": "ghost-heroku",
+  "version": "0.0.0",
+  "description": "Run ghost on Heroku",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/saulshanabrook/ghost-heroku.git"
+  },
+  "keywords": [
+    "ghost",
+    "heroku",
+    "blogging",
+    "deploy"
+  ],
+  "author": "Saul Shanabrook",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saulshanabrook/ghost-heroku/issues"
+  },
+  "homepage": "https://github.com/saulshanabrook/ghost-heroku",
+  "dependencies": {
+    "ghost": "~0.4.2"
+  }
+}
