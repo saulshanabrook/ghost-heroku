@@ -6,7 +6,16 @@
 var config = {
     production: {
         url: process.env.web_url,
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: process.env.MAILGUN_SMTP_LOGIN,     // mailgun username
+                    pass: process.env.MAILGUN_SMTP_PASSWORD  // mailgun password
+                }
+            }
+        },
         database: {
             client: 'pg',
             connection: process.env.DATABASE_URL,

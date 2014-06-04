@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo_and_run() { echo "\$ $@" ; "$@" ; }
+echo_and_run() { echo "\$ $@" ; "$@" ; echo ;}
 
 read -e -p "Heroku app name: " APP_NAME
 read -e -p "Custom Domain: " CUSTOM_DOMAIN
@@ -9,12 +9,12 @@ read -e -p "Custom Domain: " CUSTOM_DOMAIN
 CUSTOM_SUBDOMAIN=$(echo CUSTOM_DOMAIN | sed 's/\..*//g')
 CUSTOM_URL="http://$CUSTOM_DOMAIN/"
 
-echo_and_run heroku create $APP_NAME --addons heroku-postgresql:dev
+echo_and_run heroku create $APP_NAME --addons heroku-postgresql:dev,mailgun
 
 HEROKU_URL=$(heroku info -s | grep web_url | sed 's/.*=//g')
 HEROKU_DOMAIN=$(basename $HEROKU_URL)
 
-echo_and_run heroku config:set PGSSLMODE=require
+echo_and_run heroku config:set PGSSLMODE=require NODE_ENV=production
 
 
 if [ "$CUSTOM_DOMAIN" != "" ]
