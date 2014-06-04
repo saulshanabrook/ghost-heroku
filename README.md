@@ -4,7 +4,10 @@
 $ ./deploy.sh
 
 ```
-
+# Change domain after initial setup
+```
+$ heroku config:set "web_url=new_domain"
+```
 
 # Smart things this does
 1. Retrieve Herokuy PG `DATABASE_URL` straight from the environment, without
