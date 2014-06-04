@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/saulshanabrook/ghost-heroku",
   "dependencies": {
-    "ghost": "~0.4.2"
+    "ghost": "~0.4.2",
+    "pg": "~3.3.0"
   }
 }
