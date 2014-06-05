@@ -28,4 +28,4 @@ $ npm start
 2. Install Ghost as an NPM module so that the source is not included in the
    repo itself. This feels a lot cleaner to me. And then if you wan to update
    ghost, just change the version in package.json.
-
+3. Can add  middleware over Ghost, by changing `index.js` app.
