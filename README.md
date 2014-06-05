@@ -2,13 +2,17 @@
 
 ```
 $ ./deploy.sh
-
 ```
+
 # Change domain after initial setup
 ```
 $ heroku config:set "web_url=new_domain"
 ```
 
+# Run Locally
+```
+$ npm start
+```
 # Downsides of hosting on Heroku
 1. No image upload suport, because Heroku has an ephemeral filesystem.
    Waiting on Ghost apps support for external filesystems TryGhost/Ghost#1474
