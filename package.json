@@ -24,7 +24,6 @@
     "pg": "~3.3.0"
   },
   "scripts": {
-    "start": "node node_modules/ghost/index.js",
-    "postinstall": "cp config.js node_modules/ghost/config.js"
+    "start": "node index.js"
   }
 }
