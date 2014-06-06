@@ -21,7 +21,8 @@
   "homepage": "https://github.com/saulshanabrook/ghost-heroku",
   "dependencies": {
     "ghost": "~0.4.2",
-    "pg": "~3.3.0"
+    "pg": "~3.3.0",
+    "custom-redirects": "~0.1.0"
   },
   "scripts": {
     "start": "node index.js"
