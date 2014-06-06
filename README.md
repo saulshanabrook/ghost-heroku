@@ -1,3 +1,5 @@
+I wrote [a blog post](http://www.saulshanabrook.com/the-helish-ride-to-paradise/) about switching from Tumblr to Ghost on Heroku.
+
 # Deploy
 Change redirects in `./redirects.js` for custom redirects.
 
