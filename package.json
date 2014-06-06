@@ -25,6 +25,7 @@
     "custom-redirects": "~0.1.0"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node node_modules/ghost/index.js",
+    "prestart": "cp config.js node_modules/ghost/config.js"
   }
 }
