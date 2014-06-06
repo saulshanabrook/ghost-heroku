@@ -1,4 +1,12 @@
 # Deploy
+Change redirects in `./redirects.js` for custom redirects.
+
+If you don't want any custom redirects, you can remove the file and
+remove
+```
+app.use(customRedirects(redirects));
+```
+from `./index.js`
 
 ```
 $ ./deploy.sh
