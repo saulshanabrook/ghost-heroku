@@ -35,7 +35,7 @@ config = {
         },
         fileStorage: false,
         paths: {
-            'availableThemes': path.join(__dirname, 'themes')
+            'contentPath': path.join(__dirname, 'content')
         }
     },
     development: {
@@ -56,7 +56,7 @@ config = {
             port: '2368'
         },
         paths: {
-            'availableThemes': path.join(__dirname, 'themes')
+            'contentPath': path.join(__dirname, 'content')
         }
     }
 };
@@ -66,6 +66,5 @@ config.app.use(customRedirects(redirects));
 
 process.env.GHOST_CONFIG = path.join(__dirname, 'config.js');
 
-console.log(path.join(__dirname, '.ghost-dev.db'));
 // Export config
 module.exports = config;
