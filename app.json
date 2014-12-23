@@ -1,0 +1,12 @@
+{
+  "name": "Ghost",
+  "description": "Ghost blogging platform",
+  "repository": "https://github.com/saulshanabrook/ghost-heroku",
+  "logo": "https://ghost.org/assets/logos-d976c73a12a1a34a3db6be321db81f71.png",
+  "keywords": ["ghost", "blogging"],
+  "success_url": "/ghost",
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "mailgun:starter"
+  ]
+}
