@@ -10,9 +10,12 @@ app.use(customRedirects(redirects));
 ```
 from `./index.js`
 
+Then
 ```
 $ ./deploy.sh
 ```
+
+or [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 # Change domain after initial setup
 ```
