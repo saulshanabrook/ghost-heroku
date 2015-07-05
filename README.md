@@ -1,3 +1,5 @@
+**NOTE**: Someone else wrote a great version of this. [Use that](https://github.com/cobyism/ghost-on-heroku)
+
 I wrote [a blog post](http://www.saulshanabrook.com/the-helish-ride-to-paradise/) about switching from Tumblr to Ghost on Heroku.
 
 # Deploy
